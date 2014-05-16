@@ -4,11 +4,9 @@
  */
 package marsrovers;
 
-import java.util.ArrayList;
-
 /**
  *
- * @author cristianomichel
+ * @author yonmigongora@gmail.com
  */
 public class origen {
     private int x;
@@ -51,10 +49,20 @@ public class origen {
         this.coordenada = coordenada;
     }
     
+    /**
+     * Retorna la longitud de la instruccion.
+     *
+     * @return 
+     */
     public int longitudInstrucion(){
         return instruccion.toString().length();
     }
 
+    /**
+     * Retorna el siguiente instruccion de acuerdo a la posicion enviada
+     *
+     * @return 
+     */
     public char obtenerInstruccion(int pos){
         return instruccion.charAt(pos);
     }    

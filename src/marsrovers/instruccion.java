@@ -4,11 +4,9 @@
  */
 package marsrovers;
 
-import java.util.ArrayList;
-
 /**
  *
- * @author cristianomichel
+ * @author yonmigongora@gmail.com
  */
 public class instruccion {
     private String instruccion;
@@ -19,10 +17,6 @@ public class instruccion {
     public instruccion(String instruccion) {
         this.instruccion = instruccion;
     }
-    
-    public char obtenerInstruccion(int pos){
-        return instruccion.charAt(pos);
-    }
 
     public String getInstruccion() {
         return instruccion;
@@ -30,8 +24,17 @@ public class instruccion {
 
     public void setInstruccion(String instruccion) {
         this.instruccion = instruccion;
-    }
+    }    
     
+    /**
+     * Retorna la siguiente instruccion de acuerdo a la posicion enviada
+     *
+     * @return 
+     */
+    public char obtenerInstruccion(int pos){
+        return instruccion.charAt(pos);
+    }
+
     @Override
     public String toString() {
         return this.instruccion;
